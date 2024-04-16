@@ -1,4 +1,5 @@
 #!/bin/bash
+
 read -p "Enter path for control: pathcheck
 read -p "Enter path fo result: " pathresult
 mkdir -p $pathresult
@@ -7,3 +8,5 @@ mkdir -p $pathresult
            echo "file name $var md5sum $pathcheck/$var >> $pathresult/$pathcheck-md5sum.txt
         done
 echo "Chevk Done"        
+
+
