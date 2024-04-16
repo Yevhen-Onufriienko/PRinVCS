@@ -7,4 +7,4 @@ do
 echo "file name - " $var
 md5sum $pathcheck/$var >> $pathresult/$pathcheck-md5sum.txt
 done
- 
+ echo "Check Done"
