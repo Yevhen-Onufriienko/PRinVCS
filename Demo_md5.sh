@@ -1,5 +1,6 @@
 #!/bin/bash
 read -p "Enter path for control: " pathcheck
+
 read -p "Enter path for result: " pathresult
 mkdir -p $pathresult
     for var in $patchcheck/*
@@ -8,3 +9,13 @@ mkdir -p $pathresult
             md5sum $pathcheck/$var >> $pathresult/$pathcheck-md5sum.txt
         done
 echo "Check Done"
+
+read -p "Enter path fo result: " pathresult
+mkdir -p $pathresult
+     for var in  $pathcheck/*
+         do 
+           echo "file name - " $var
+           md5sum $pathcheck/$var >> $pathresult/$pathcheck-md5sum.txt
+         done
+echo "Check Done"
+
