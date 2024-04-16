@@ -9,3 +9,4 @@ mkdir -p $pathresult
       echo "fike name - " $let
       md5sum $pathcheck/$let >> $pathresult/$pathcheck-md5sum.txt
     done
+echo "Check Done"
